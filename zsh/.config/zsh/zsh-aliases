@@ -1,0 +1,33 @@
+# Load aliases and shortcuts if existent.
+# [ -f "$HOME/.config/shell/shortcutrc" ] && source "$HOME/.config/shell/shortcutrc"
+# [ -f "$HOME/.config/shell/aliasrc" ] && source "$HOME/.config/shell/aliasrc"
+# [ -f "$HOME/.config/shell/zshnameddirrc" ] && source "$HOME/.config/shell/zshnameddirrc"
+# [ -f "$ZDOTDIR/theme-and-appearance.zsh" ] && source "$ZDOTDIR/theme-and-appearance.zsh"
+
+# alias for basic using
+alias ls="ls --color=auto"
+alias la="ls -al"
+alias cp="cp -v"
+alias mv="mv -v"
+alias py="python"
+alias vim="nvim"
+alias tmux="tmux -f $HOME/.config/tmux/tmux.conf"
+
+# alias for bookmark-files
+alias ar="cd $HOME/Code/ActivityRecognition/"
+alias rsm="cd $HOME/Code/Resample/"
+alias aml="cd $HOME/Code/algo_manager_lib/"
+alias sal="cd $HOME/Code/simple_algo_lib/"
+alias mldt="cd $HOME/Code/algo_mldt/"
+alias watch="cd $HOME/Code/WatchProject/"
+alias dot="cd ~/.config/"
+
+# alias for bookmark-folders
+alias bf="$EDITOR $HOME/.config/shell/bm-files"
+alias cft="$EDITOR $HOME/.config/tmux/tmux.conf"
+alias cfv="$EDITOR $HOME/.config/nvim/init.lua"
+alias cfz="$EDITOR $HOME/.config/zsh/.zshrc"
+alias cfg="$EDITOR $HOME/.gitconfig"
+alias rez="source $ZDOTDIR/.zshrc"
+
+

@@ -1,0 +1,58 @@
+[user]
+    name = ryan.lee
+    email = ryan.lee@cyweemotion.com
+
+[color]
+    ui = auto
+[color "branch"]
+    current = yellow bold
+    local = green bold
+    remote = cyan bold
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+    whitespace = red reverse
+[alias]
+    a = add --all
+    #############
+    b = branch
+    ba = branch -a
+    bd = branch -D
+    #############
+    c = commit
+    ca = commit -a
+    cm = commit -m
+    #############
+    co = checkout
+    cob = checkout -b
+    #############
+    d = diff
+    dw = diff -w
+    #############
+    l = log --oneline
+    lg = log --color --graph --decorate --pretty=format:'%C(yellow)%h%C(reset) -%C(auto)%d%Creset %s %C(bold blue)<%an>%C(reset)'
+    #############
+    mr = !sh -c 'git fetch $1 merge-requests/$2/head:mr-$1-$2 && git checkout mr-$1-$2' -
+    #############
+    ps = push
+    psao = push --all origin
+    pullm = pull --recurse-submodules
+    #############
+    s = status
+    ss = status --short
+    ############
+    t = tag
+    td = tag -d
+[merge "ours"]
+    driver = true
+[core]
+    autocrlf = true
+    editor = nvim
+[pull]
+    ff = only
+[credential]
+    helper = manager-core
+[merge]
+    ff = false

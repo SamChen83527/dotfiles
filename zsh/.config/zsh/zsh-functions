@@ -1,0 +1,26 @@
+# Function to source filesif they exist
+function zsh_add_file() {
+    [ -f "$ZDOTDIR/$1" ] && source "$ZDOTDIR/$1"
+}
+
+function zsh_add_theme() {
+    [ -f "$ZDOTDIR/themes/$1.zsh-theme" ] && source "$ZDOTDIR/themes/$1.zsh-theme"
+}
+
+function zsh_add_plugin() {
+
+    function _try_source() {
+        [ -f "$1" ] && source "$1"
+    }
+
+    # create the folder
+    PLUGIN_NAME=$(echo $1 | cut -d "/" -f 2)
+    if [ ! -d "$ZSH_PLUGIN_DIR/$PLUGIN_NAME" ]; then 
+        git clone "https://github.com/$1.git" "$ZSH_PLUGIN_DIR/$PLUGIN_NAME"
+    fi
+
+    # source the file
+    _try_source "$ZSH_PLUGIN_DIR/$PLUGIN_NAME/$PLUGIN_NAME.plugin.zsh" || \
+    _try_source "$ZSH_PLUGIN_DIR/$PLUGIN_NAME/$PLUGIN_NAME.zsh"
+}
+

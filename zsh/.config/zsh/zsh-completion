@@ -1,0 +1,21 @@
+# Load more completions
+fpath=($ZDORDIR/plugins/zsh-completions/src $fpath)
+
+autoload -U compinit; compinit
+_comp_options+=(globdots) # With hidden files
+# Dump in cacah directory for speeding up completion
+compinit -d $XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION
+
+zmodload zsh/complist
+# set operations
+setopt menucomplete
+
+zstyle ':completion:*' menu select
+# Enable cache for faster completion and set cache path
+zstyle ':completion:*' use-cache on
+zstyle ':completion:*' cache-path "$XDG_CACHE_HOME/zsh/.zcompcache"
+
+zstyle ':completion:*:*:*:*:corrections' format '%F{yellow}!- %d (errors: %e) -!%f'
+zstyle ':completion:*:*:*:*:descriptions' format '%F{blue}-- %D %d --%f'
+zstyle ':completion:*:*:*:*:messages' format ' %F{purple} -- %d --%f'
+zstyle ':completion:*:*:*:*:warnings' format ' %F{red}-- no matches found --%f'

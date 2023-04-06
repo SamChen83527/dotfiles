@@ -54,9 +54,9 @@ zsh:
 build_tools:
 	@echo "========================="
 	@echo "Install build tools..."
-	suod apt update && sudo apt upgrade -y
+	sudo apt update && sudo apt upgrade -ysudo
 	sudo apt install -y build-essential tree ascii stow powerline fonts-powerline x11-apps unzip
-	sudo apt install -y gcc-multilib g++-multilib cmake clang libclang-10-dev
+	sudo apt install -y gcc-multilib g++-multilib cmake clangsudo
 	sudo apt install -o Dpkg::Options::="--force-overwrite" bat ripgrep
 	sudo apt install -y python3-tk 
 	@echo "========================="

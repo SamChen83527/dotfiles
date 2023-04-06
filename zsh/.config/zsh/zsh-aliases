@@ -14,12 +14,12 @@ alias vim="nvim"
 alias tmux="tmux -f $HOME/.config/tmux/tmux.conf"
 
 # alias for bookmark-files
-alias ar="cd $HOME/Code/ActivityRecognition/"
-alias rsm="cd $HOME/Code/Resample/"
-alias aml="cd $HOME/Code/algo_manager_lib/"
-alias sal="cd $HOME/Code/simple_algo_lib/"
-alias mldt="cd $HOME/Code/algo_mldt/"
-alias watch="cd $HOME/Code/WatchProject/"
+# alias ar="cd $HOME/Code/ActivityRecognition/"
+# alias rsm="cd $HOME/Code/Resample/"
+# alias aml="cd $HOME/Code/algo_manager_lib/"
+# alias sal="cd $HOME/Code/simple_algo_lib/"
+# alias mldt="cd $HOME/Code/algo_mldt/"
+alias watch="cd $HOME/code/cwm_algo_runner_watch/"
 alias dot="cd ~/.config/"
 
 # alias for bookmark-folders

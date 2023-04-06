@@ -2,8 +2,8 @@
 -- vim.g.airline_powerline_fonts = 1
 --vim.g.airline_theme = "onedark"
 
--- local colorscheme = "darkplus"
-local colorscheme = "gruvbox-material"
+local colorscheme = "darkplus"
+-- local colorscheme = "gruvbox-material"
 -- local colorscheme = "gruvbox"
 -- local colorscheme = "onedarker"
 

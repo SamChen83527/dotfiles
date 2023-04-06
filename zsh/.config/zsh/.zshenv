@@ -17,4 +17,4 @@ export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
 export XDG_RUNTIME_DIR=/tmp/runtime-ryanlee
 export RUNLEVEL=3
 export LIBGL_ALWAYS_INDIRECT=1
-. "$HOME/.cargo/env"
+# . "$HOME/.cargo/env"

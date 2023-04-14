@@ -58,6 +58,7 @@ build_tools:
 	sudo apt install -y build-essential tree ascii stow powerline fonts-powerline x11-apps unzip
 	sudo apt install -y gcc-multilib g++-multilib cmake clang
 	sudo apt install -o Dpkg::Options::="--force-overwrite" bat ripgrep
+	sudo apt install exa
 	sudo apt install -y python3-tk
 	sudo apt install -y npm
 	sudo npm install -g n

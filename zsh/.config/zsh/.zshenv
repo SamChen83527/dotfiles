@@ -12,7 +12,7 @@ export ZSH_PLUGIN_DIR="$HOME/.local/share/zsh"
 export EDITOR="nvim"
 
 # show figure settings
-export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
+# export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
 #export DISPLAY=$(awk '/nameserver / {print $2; exit}' /etc/resolv.conf 2>/dev/null):0 # in WSL 2
 export XDG_RUNTIME_DIR=/tmp/runtime-ryanlee
 export RUNLEVEL=3

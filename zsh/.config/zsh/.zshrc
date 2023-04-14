@@ -41,3 +41,4 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 export XDG_RUNTIME_DIR=/tmp/runtime-ryanlee
 export RUNLEVEL=3
 export LIBGL_ALWAYS_INDIRECT=1
+# export BROWSER='/mnt/c/Program Files/Google/Chrome/Application/chrome.exe'

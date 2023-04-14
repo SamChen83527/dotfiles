@@ -6,7 +6,7 @@ help:
 
 
 ## Install all required tools
-all: zsh nvim nvm rust exa
+all: zsh nvim
 	@echo "All done"
 
 ## Install NVM for pyright lsp
@@ -58,7 +58,11 @@ build_tools:
 	sudo apt install -y build-essential tree ascii stow powerline fonts-powerline x11-apps unzip
 	sudo apt install -y gcc-multilib g++-multilib cmake clang
 	sudo apt install -o Dpkg::Options::="--force-overwrite" bat ripgrep
-	sudo apt install -y python3-tk 
+	sudo apt install -y python3-tk
+	sudo apt install -y npm
+	sudo npm install -g n
+	sudo n 12.0.0
+	sudo npm install -g pyright
 	@echo "========================="
 
 ## Install neovim 
